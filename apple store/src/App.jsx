@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
+import Controls from "./components/Controls";
+import Navbar  from "./components/Navbar";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const [frameZoom, setFrameZoom] = useState(false);
 
-export default App
+  const toggleZoom = () => {
+    setFrameZoom(!frameZoom);
+  };
+
+  return (
+    <div className="w-full h-screen grid place-items-center">
+      <div
+        className={`${
+          frameZoom ? "min-w-[97vh] " : ""
+        }w-[70vh] h-[85vh] min-w-[70vw] min-h-[85vh] max-w-[90vw] max-h-[90vh] border border-gray-300 rounded-2xl resize overflow-auto relative`}
+      >
+        <Navbar/>
+        <Controls toggleZoom={toggleZoom} frameZoom={frameZoom} />
+      </div>
+    </div>
+  );
+};
+
+export default App;
