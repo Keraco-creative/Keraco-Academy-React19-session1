@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Controls from "./components/Controls";
 import Navbar  from "./components/Navbar";
 import Home from "./components/Home";
+import Iphone from "./components/Iphone";
 
 const App = () => {
   const [frameZoom, setFrameZoom] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
         <Controls toggleZoom={toggleZoom} frameZoom={frameZoom} />
         <div className="flex-grow border-rounded">
         <Home />
+        <Iphone />
         </div>
       </div>
     </div>

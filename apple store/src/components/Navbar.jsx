@@ -3,7 +3,7 @@ import { navItems } from "../data/index";
 
 const Navbar = ({ activePage, handleNavClick }) => {
   return (
-    <div className="2xl:w-80 xl:w-52 w-44 h-full bg-[#884d4d] flex flex-col justify-between pt-5 pl-6 pb-14 md:pb-0">
+    <div className="2xl:w-80 xl:w-52 w-44 h-full bg-[#a36666] flex flex-col justify-between pt-5 pl-6 pr-6 pb-14 md:pb-0">
       <a
         href="#"
         className="2xl:text-2xl xl:text-xl font-semibold text-white mb-14 tracking-wide"
