@@ -24,7 +24,7 @@ const App = () => {
         <Navbar activePage={activePage} handleNavClick={handleNavClick}/>
         <Controls toggleZoom={toggleZoom} frameZoom={frameZoom} />
         <div className="flex-grow border-rounded">
-        <Home />
+        {/* <Home /> */}
         <Iphone />
         </div>
       </div>
